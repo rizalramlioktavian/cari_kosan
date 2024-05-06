@@ -1,0 +1,253 @@
+@media (max-width: 991.98px) {
+
+    /* navbar */
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    .navbar-nav .nav-link {
+        margin-right: 30px;
+    }
+
+    .navbar-nav .btn {
+        width: 130px;
+    }
+
+    /* navbar */
+
+    /* navbar logged */
+    #logged .navbar-nav {
+        margin-left: 0;
+    }
+
+    #logged .dropdown {
+        margin-left: auto;
+    }
+
+    #logged .dropdown img {
+        width: 30%;
+        padding-left: 10px;
+    }
+
+    /* navbar logged */
+
+    /* hero */
+    #hero img {
+        width: 100%;
+    }
+
+    #hero .deskripsi-hero {
+        margin-top: 50px;
+    }
+
+    /* hero */
+
+    /* kosan */
+    #kosan {
+        margin-top: 100px;
+    }
+
+    #kosan .more {
+        display: flex;
+        justify-content: end;
+    }
+
+    #kosan .card {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #kosan .card h4 {
+        color: #0d6cf9;
+        margin-top: -10px;
+    }
+
+    #kosan .card h4 small {
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    #kosan .card .btn {
+        width: 100%;
+    }
+
+    /* kosan */
+
+    /* kota */
+    #kota {
+        margin-top: 100px;
+    }
+
+    #kota .more {
+        display: flex;
+        justify-content: end;
+    }
+
+    #kota .card {
+        margin-top: 20px;
+        border: none;
+        color: white;
+        width: 100%;
+    }
+
+    #kota .card .card-title {
+        position: absolute;
+        bottom: 15px;
+    }
+
+    /* kota */
+
+    /* promo */
+    #promo img {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    /* promo */
+
+    /* artikel */
+    #artikel {
+        margin-top: 100px;
+    }
+
+    #artikel img {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    #artikel .ic-app {
+        width: 350px;
+    }
+
+    #artikel .deskripsi-artikel {
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    #artikel .playstore {
+        width: 350px;
+    }
+
+    /* artikel */
+
+    /* penutup */
+    footer {
+        background-color: #222;
+        margin-top: 100px;
+        height: 50px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* penutup */
+
+    /* daftar */
+    #daftar {
+        margin-top: 50px;
+    }
+
+    #daftar img {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    #daftar form label {
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #daftar .btn {
+        width: 130px;
+    }
+
+    /* daftar */
+
+    /* login */
+    #login {
+        margin-top: 50px;
+    }
+
+    #login img {
+        width: 80%;
+        margin-left: 20%;
+    }
+
+    #login form label {
+        font-weight: 600;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #login .btn {
+        width: 130px;
+    }
+
+    #login .forgot {
+        display: flex;
+        justify-content: end;
+    }
+
+    /* login */
+
+    /* ruang */
+    #ruang .card {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* ruang */
+
+    /* order */
+    #order .card {
+        margin-top: 20px;
+    }
+
+    #order p {
+        color: gray;
+        margin-top: 10px;
+    }
+
+    #order label {
+        margin-top: 20px;
+    }
+
+    /* order */
+
+    /* sukses */
+    #sukses img {
+        width: 100%;
+    }
+
+    #sukses .ic_mandiri {
+        width: 20%;
+    }
+
+    #sukses p {
+        margin-top: 20px;
+    }
+
+    #sukses .ic_beranda {
+        text-decoration: none;
+    }
+
+    /* sukses */
+
+    /* cek */
+    #cek .status {
+        color: #FFCB8F;
+    }
+
+    /* cek */
+
+
+
+
+}
