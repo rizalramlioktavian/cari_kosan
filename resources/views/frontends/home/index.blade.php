@@ -44,9 +44,34 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ $kosan->title }} {{ $kosan->city->title }}</h5>
                             <p class="card-text">{!! $kosan->address !!}</p>
-                            <h4 class="text-primary">{{ rupiahFormat($kosan->price) }}<small>/malam</small></h4>
-                                {{-- <a href="{{ route('booking.detail', $kosan->id) }}" class="btn btn-primary">Lihat Detail</a> --}}
-                                <a href="{{ route('booking.detail', $kosan->slug) }}" class="btn btn-primary">Lihat Detail</a>
+                            <select class="form-select">
+                                <option selected disabled>Harga {{ $kosan->title }}</option>
+                                @foreach ($kosan->ruang as $ruang)
+                                    @php
+                                        $typeSewa = '';
+                                        switch ($ruang->type_sewa) {
+                                            case 'Harian':
+                                            $typeSewa = 'Per Hari';
+                                            break;
+                                            case 'Mingguan':
+                                            $typeSewa = 'Per Minggu';
+                                            break;
+                                            case 'Bulanan':
+                                                $typeSewa = 'Per Bulan';
+                                                break;
+                                                case 'Tahunan':
+                                                $typeSewa = 'Per Tahun';
+                                                break;
+                                            default:
+                                                $typeSewa = $ruang->type_sewa;
+                                                break;
+                                            }
+                                    @endphp
+                                    <option value="{{ $ruang->id }}">{{ rupiahFormat($ruang->price) }} /{{ $typeSewa }}</option>
+                                @endforeach
+                            </select>
+
+                                <a href="{{ route('booking.detail', $kosan->slug) }}" class="btn btn-primary mt-5">Lihat Detail</a>
                         </div>
                     </div>
                 </div>
